@@ -626,6 +626,10 @@ while running:
     if menu:
         renderMenu()
     
+    my_font = pygame.font.SysFont('charter', 20)
+    text_surface = my_font.render("Press 'M' to toggle menu", False, (255,255,255))
+    screen.blit(text_surface,(950,750))
+    
     #display messages
     if len(messageQueue) > 0:
         my_font = pygame.font.SysFont('charter', 20)
